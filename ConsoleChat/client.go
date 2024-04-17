@@ -13,7 +13,7 @@ import (
 
 func main() {
 
-	fmt.Println("IP:PORT = ")
+	fmt.Println("Port::: ")
 	reader := bufio.NewReader(os.Stdin)
 	serverID, err := reader.ReadString('\n')
 
@@ -36,6 +36,7 @@ func main() {
 	client := chatserver.NewServicesClient(conn)
 
 	stream, err := client.ChatService(context.Background())
+
 	//связь с Grpc сервером
 
 	ch := clienthandle{stream: stream}
@@ -100,7 +101,7 @@ func (ch *clienthandle) receiveMessage() {
 		if err != nil {
 			log.Printf("Ошибка отправки сообщений :: %v", err)
 		}
-		
+
 		fmt.Printf("%s : %s \n", mssg.Name, mssg.Body)
 
 	}
