@@ -14,7 +14,7 @@ func main() {
 	
 	Port := os.Getenv("PORT")
 	if Port == "" {
-		Port = "5000" //default port
+		Port = "5500" //default port
 		}
 
 	//слушаем поток
