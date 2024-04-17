@@ -130,6 +130,7 @@ body {
 }
 
 .chatlist {
+    display: block;
     position: relative;
     height: calc(100% - 60px);
     overflow-y: auto;
@@ -246,6 +247,41 @@ body {
     color: #b4b6b7;
 }
 
+.settings {
+    display: none;
+}
+
+.settings.hidden {
+    display: block;
+}
+
+.settings .userimg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.settings .userimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.settings .username {
+    margin-top: 10px;
+    font-size: 16px;
+    color: gray;
+    font-style: italic;
+}
+
+.settings .login {
+    margin-top: 5px;
+    font-size: 12px;
+    color: gray;
+    font-style: italic;
+}
+
 .chatBox {
     position: relative;
     width: 100%;
@@ -264,12 +300,14 @@ body {
 .message p {
     position: relative;
     right: 0;
-    text-align: right;
+    text-align: justify;
     max-width: 65%;
     padding: 12px;
     background: #E1F9E0;
     font-size: 0.9em;
     border-radius: 10px;
+    text-wrap: pretty;
+    overflow-wrap: anywhere;
 }
 
 .message p::before {
@@ -395,7 +433,8 @@ body {
     }
 
     .user_message p {
-        background-color: rgb(54, 170, 170); /* REMAKE!!!! */
+        background-color: rgb(54, 170, 170);
+        /* REMAKE!!!! */
     }
 
     .sender_message p {
@@ -403,11 +442,14 @@ body {
     }
 
     .message.sender_message p::before {
-        background: linear-gradient(225deg, #778899 0%, #778899 50%, transparent 50%, transparent); /* REMAKE!!!! */
+        background: linear-gradient(225deg, #778899 0%, #778899 50%, transparent 50%, transparent);
+        /* REMAKE!!!! */
     }
 
     .message p::before {
-        background: linear-gradient(135deg, rgb(54, 170, 170) 0%, rgb(54, 170, 170) 50%, transparent 50%, transparent); /* REMAKE!!!! */ /* REMAKE!!!! */
+        background: linear-gradient(135deg, rgb(54, 170, 170) 0%, rgb(54, 170, 170) 50%, transparent 50%, transparent);
+        /* REMAKE!!!! */
+        /* REMAKE!!!! */
     }
 }
 
@@ -422,5 +464,5 @@ body {
 .sender_message p,
 .message.sender_message p::before,
 .message p::before {
-  transition: background-color 0.5s ease, color 0.1s ease;
+    transition: background-color 0.5s ease, color 0.1s ease;
 }
