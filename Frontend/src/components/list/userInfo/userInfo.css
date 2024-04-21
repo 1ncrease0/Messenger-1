@@ -1,0 +1,60 @@
+.userInfo{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+   /* background-color: #e40707;*/
+
+    .user{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+
+    .icons{
+        display: flex;
+        gap: 20px;
+        img{
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+        }
+    }
+
+    .search{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .searchBar{
+            flex:1;
+            background-color: #FFFFFF;
+            display: flex;
+            align-items: ce;
+            gap: 20px;
+            border-radius: 15px;
+            padding: 10px;
+            input{
+                background-color: transparent ;
+                border:none;
+                outline: none;
+                color: gray;
+                flex:1;
+                font-size: 1em;
+            }
+
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
