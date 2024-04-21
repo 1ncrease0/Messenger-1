@@ -1,0 +1,189 @@
+.chat{
+    flex: 3;
+  /*  border-left: 1px solid #121212;*/
+
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 100%;
+    background-color: #D8D8D8;
+    display: flex;
+
+    flex-direction: column;
+    .top{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top-right-radius: 15px;
+        background-color: #E6E6E6;
+
+        .user{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+                
+            }
+
+            .texts{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                span{
+                    font-size: 1.4em;
+                    font-weight: 500;
+                }
+
+                p{
+                    font-size: 1em;
+                    font-weight: 300;
+                    color: gray;
+                }
+            }
+        }
+
+        .icons{
+            display: flex;
+            gap: 20px;
+           
+            position: relative;
+            img{
+                cursor: pointer;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+    .center{
+
+        padding: 20px;
+        flex: 1;
+        overflow: scroll;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: #D8D8D8;
+
+
+        .message{
+            
+            max-width: 70%;
+            display: flex;
+            gap: 20px;
+            border-radius: 10px;
+            &.own{
+                align-self: flex-end;
+                
+                .texts{
+                    p{
+                        background-color: #E1F9E0;
+                    }
+                }
+            }
+
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            .texts{
+                flex:1;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                img{
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 10px;
+                    object-fit: cover;
+                }
+
+                p{
+                    text-align: justify;
+                    padding: 20px;
+                    background-color: #ffffff;
+                    border-radius: 10px;
+                    text-wrap: pretty;
+                    overflow-wrap: anywhere;
+                    font-size: 1em;
+                }
+                span{
+                    color: gray;
+                    margin-top: 5px;
+                    font-size: 0.8em;
+                }
+               
+            }
+
+        }
+    }
+
+
+    .bottom{
+        padding: 20px;
+        display: flex;
+        align-items: center;   
+        justify-content: space-between;
+        border-bottom-right-radius: 15px;
+        background-color: #E6E6E6;
+        gap: 30px;
+        margin-top: auto;
+        .icons{
+            display: flex;
+            gap: 20px;
+            
+        }
+
+        input{
+            flex:1;
+            background-color: transparent ;
+            border:none;
+            outline: none;
+            color: #000000;
+            background-color: white;
+            border-radius: 20px;
+            font-size: 1em;
+            padding: 20px;
+    
+        }
+
+        img{
+            width: 30px;
+            height: 30px;
+            cursor: pointer
+        }
+        .emoji{
+            position: relative;
+        
+            .picker{
+            
+                position: absolute;
+                bottom: 50px;
+                left: 0;
+            }
+        }
+    }
+}
+
+  /* типа информация прикольная
+    возможно плохо будет отображаться((*/
+.details{
+  position: absolute;
+  top: 150%;
+  right: 130%;
+  background-color: #ffffff;
+  padding: 20px;
+  width: 25vw;
+  height: 35vw;
+  border-radius: 15px;
+
+}
