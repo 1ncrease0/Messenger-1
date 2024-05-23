@@ -1,6 +1,6 @@
-.chat{
+.chat {
     flex: 3;
-  /*  border-left: 1px solid #121212;*/
+    /*  border-left: 1px solid #121212;*/
 
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -9,7 +9,8 @@
     display: flex;
 
     flex-direction: column;
-    .top{
+
+    .top {
         padding: 20px;
         display: flex;
         align-items: center;
@@ -17,30 +18,30 @@
         border-top-right-radius: 15px;
         background-color: #E6E6E6;
 
-        .user{
+        .user {
             display: flex;
             align-items: center;
             gap: 20px;
 
-            img{
+            img {
                 width: 50px;
                 height: 50px;
                 border-radius: 50%;
                 object-fit: cover;
-                
+
             }
 
-            .texts{
+            .texts {
                 display: flex;
                 flex-direction: column;
                 gap: 5px;
 
-                span{
+                span {
                     font-size: 1.4em;
                     font-weight: 500;
                 }
 
-                p{
+                p {
                     font-size: 1em;
                     font-weight: 300;
                     color: gray;
@@ -48,12 +49,13 @@
             }
         }
 
-        .icons{
+        .icons {
             display: flex;
             gap: 20px;
-           
+
             position: relative;
-            img{
+
+            img {
                 cursor: pointer;
                 width: 20px;
                 height: 20px;
@@ -61,7 +63,7 @@
         }
     }
 
-    .center{
+    .center {
 
         padding: 20px;
         flex: 1;
@@ -73,41 +75,44 @@
         background-color: #D8D8D8;
 
 
-        .message{
-            
-            max-width: 70%;
+        .message {
+
+            max-width: 35%;
             display: flex;
             gap: 20px;
             border-radius: 10px;
-            &.own{
+
+            &.own {
                 align-self: flex-end;
-                
-                .texts{
-                    p{
+
+                .texts {
+                    p {
                         background-color: #E1F9E0;
                     }
                 }
             }
 
-            img{
+            img {
                 width: 30px;
                 height: 30px;
                 border-radius: 50%;
                 object-fit: cover;
             }
-            .texts{
-                flex:1;
+
+            .texts {
+                flex: 1;
                 display: flex;
                 flex-direction: column;
                 gap: 5px;
-                img{
+
+                img {
                     width: 300px;
                     height: 300px;
                     border-radius: 10px;
                     object-fit: cover;
                 }
 
-                p{
+                p {
                     text-align: justify;
                     padding: 20px;
                     background-color: #ffffff;
@@ -116,56 +121,59 @@
                     overflow-wrap: anywhere;
                     font-size: 1em;
                 }
-                span{
+
+                span {
                     color: gray;
                     margin-top: 5px;
                     font-size: 0.8em;
                 }
-               
+
             }
 
         }
     }
 
 
-    .bottom{
+    .bottom {
         padding: 20px;
         display: flex;
-        align-items: center;   
+        align-items: center;
         justify-content: space-between;
         border-bottom-right-radius: 15px;
         background-color: #E6E6E6;
         gap: 30px;
         margin-top: auto;
-        .icons{
+
+        .icons {
             display: flex;
             gap: 20px;
-            
+
         }
 
-        input{
-            flex:1;
-            background-color: transparent ;
-            border:none;
+        input {
+            flex: 1;
+            background-color: transparent;
+            border: none;
             outline: none;
             color: #000000;
             background-color: white;
             border-radius: 20px;
             font-size: 1em;
             padding: 20px;
-    
+
         }
 
-        img{
+        img {
             width: 30px;
             height: 30px;
             cursor: pointer
         }
-        .emoji{
+
+        .emoji {
             position: relative;
-        
-            .picker{
-            
+
+            .picker {
+
                 position: absolute;
                 bottom: 50px;
                 left: 0;
@@ -174,16 +182,16 @@
     }
 }
 
-  /* типа информация прикольная
+/* типа информация прикольная
     возможно плохо будет отображаться((*/
-.details{
-  position: absolute;
-  top: 150%;
-  right: 130%;
-  background-color: #ffffff;
-  padding: 20px;
-  width: 25vw;
-  height: 35vw;
-  border-radius: 15px;
+.details {
+    position: absolute;
+    top: 150%;
+    right: 130%;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 25vw;
+    height: 35vw;
+    border-radius: 15px;
 
 }
