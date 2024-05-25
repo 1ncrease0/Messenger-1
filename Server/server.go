@@ -100,8 +100,6 @@ func (s *Server) Listen() {
 		// Трансляция сообщения всем клиентам
 		case msg := <-s.sendAllCh:
 			s.messages = append(s.messages, msg)
-			s.sendAll(msg.all-1)
-                  s.sendAll(msg.other)
 		// Поступила ошибка
 		case err := <-s.errCh:
 			log.Println("Error:", err.Error())
